@@ -1,1 +1,2 @@
-# cb-wd-7-notes
+# Quickstart Guides
+The very basics to get you started.
