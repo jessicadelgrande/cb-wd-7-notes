@@ -42,7 +42,7 @@ The ```Switch``` component ensures that only the FIRST matched route child will 
 
 Adding ```Switch``` to the above example would look like this:
 ``` 
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const App = () => {
   return (
@@ -64,5 +64,5 @@ const App = () => {
 
 export default App; 
 ```
-Notice that ```Switch``` wraps ALL the routes that we will toggle between. It's the same idea as HTML radio buttons: only one nested ```Route``` will be active at a time. 
+Notice that ```Switch``` wraps ALL the routes that we will toggle between. It's the same idea as HTML radio buttons: only one nested ```Route``` will be active at a time. We also need to remember to import the ```Switch``` component from ```react-router-dom```.
 
