@@ -17,6 +17,7 @@ Unlike other variables that no longer exist when the function exits, state varia
 
 **How do we use `useState`?**
 
+* `import { useState } from 'react'`
 * To *create a state variable*, use array destructuring to assign variable names to the state's array elements, like this:
 `const [pizza, setPizza] = useState(currentPizza)`
 Remember that the first array item in the return is current state, and the second array item is a function which will be used to update/set the state -- this is why we typically name these variables with a pattern of `value` and `setValue`.
