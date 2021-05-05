@@ -75,7 +75,7 @@ Let's break it down:
 - We have an `if` statement that checks an imaginary database to see if the user is `loggedIn`. If they are, we update the state of `userName`. (In the return we have logic to display their name on the screen if `loggedIn === true`.)
 - When the button (in the return) is clicked, `loggedIn` is updated in state using the `setLoggedIn` function.
 - `useEffect` runs every time the `loggedIn` state changes, because we've passed `loggedIn` as a dependency.
-- `useEffect` does *not* run when the `userName` state changes, because we haven't put it in the dependency array.
+- `useEffect` does *not* run when the `setUserName` function runs, because we haven't put it in the dependency array.
 
 **`useEffect` dependencies**
 
