@@ -36,7 +36,7 @@ This is the basic structure of the `useEffect` hook:
 `useEffect(() => { logic }, [dependencies]);`
 
 Let's look at how `useEffect` works. In this example, we're geting user information from a database after a `loggedIn` state updates to `true`, and then we print that info to the page:
-```
+```js
 import { useState, useEffect } from 'react';
 
 function App() {
