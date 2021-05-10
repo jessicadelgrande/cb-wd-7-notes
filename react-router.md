@@ -11,7 +11,7 @@ Router shows and hides components based on the criteria that we give it, and cha
 * Wrap the HTML in your ```App``` component in the ```Router``` component - that means that ```Router``` is wrapping EVERYTHING inside of your return. (Alternatively, you could ```import { BrowserRouter } from "react-router-dom"``` in your ```index.js``` file and wrap ```BrowserRouter``` around the ```<App />``` in that file instead -- whichever you choose, you only need to do it IN ONE SPOT to enable the router magic in your application.)
 * Inside the ```Router``` component, we use ```Route``` components to provide paths to display specific content. When the user visits the URL that matches the ```path``` attribute of a ```Route```, the application will render the matched component.
 * ```Route``` has an attribute called ```exact``` that checks for an exact match to the path provided. The default behaviour is partial matching, so ```/``` and ```/toppings``` will both render if we don't use this ```exact``` attribute.
-``` 
+```js 
 import { BrowserRouter, Route } from "react-router-dom";
 
 const App = () => {
@@ -41,7 +41,7 @@ The ```Switch``` component ensures that only the FIRST matched route child will 
 **Using Switch**
 
 Adding ```Switch``` to the above example would look like this:
-``` 
+```js 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const App = () => {
