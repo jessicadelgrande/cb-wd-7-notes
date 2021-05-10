@@ -12,7 +12,7 @@
 * Declare that same variable name in the component where you will be managing the params, using the syntax `let { currentDay } = useParams();`.
 * You can access multiple params in one url, e.g. `/specials/:currentDay/:birthdaySpecial`, and you can use destructuring syntax to declare them, like this: `let { currentDay, birthdaySpecial } = useParams();`. 
 * Parameters are mandatory by default. If you would like your parameter to be optional, simply add a `?` after it in the `path`, like this: `/specials/:currentDay/:birthdaySpecial?`. (Remember that you'll have to handle this condition in your component!)
-``` 
+```js 
 import { BrowserRouter, Route, Switch, useParams } from "react-router-dom";
 
 const App = () => {
