@@ -12,13 +12,13 @@ Rather than passing state as props down through the component tree (a practice k
 
 **How do I manage context?**
 
-There are three parts to managing context in React:
+There are three steps to managing context in React:
 - `createContext()`
 - `.Provider`
 - `useContext()`
 
 Here's how to use them:
-- Declare a variable and call `createContext()` to create a context object instance.
+- Declare a variable and call `createContext()` to create a context object instance. Remember to `export` so it will be available for import in other components!
 - Render the `.Provider` (in the same file where you created the instance) to assign a value to the context. Re-render happens in dependent components when the value of the `.Provider` changes.
 - Call `useContext()` in any component that is nested in that provider in order to use the context value. The argument passed to the `useContext` hook must be the context object itself.
 
