@@ -65,9 +65,9 @@ export default Orders;
 ```
 
 Here's what's happening:
-- We are creating a context object instance in the `App.js` component by declaring a variable and calling `createContext()`.
+- We are creating a context object instance in the `App.js` component by declaring a variable and calling `createContext()`. At the top of this file we import `{ createContext }`.
 - We are assigning a value to the context using `.Provider`.
-- In a separate component -- that is not a direct descendant of `App.js` --  we are calling `useContext` so we can use `DeliveryContext` in that component. 
+- In a separate component -- that is not a direct descendant of `App.js` --  we are calling `useContext` so we can use `DeliveryContext` in that component. Because we're using context here, remember to import `{ useContext }`. 
 
 **How does this all work?**
 
