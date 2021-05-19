@@ -100,7 +100,9 @@ What's happening here?
 3. The `dispatch` function calls the `reducer` function.
 4. Notice that the `reducer` function has a parameter of `action` - so this `action` runs when `dispatch` is called.
 5. The `reducer` function checks the `switch` statement for the appropriate `action` and returns it.
-6. Behold - the number changes when the buttons are clicked! Try this for yourself in a sandbox: https://codesandbox.io/s/busy-chaplygin-c6eti?file=/src/App.js:531-1073
+6. Behold - the number changes when the buttons are clicked! 
+
+Try this for yourself in a sandbox: https://codesandbox.io/s/busy-chaplygin-c6eti?file=/src/App.js:531-1073
 
 
 
