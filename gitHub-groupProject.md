@@ -85,5 +85,7 @@ Here are the steps, with details specific to this group project:
   - team lead: reply to the message to let your team know that they need to pull the updated code from `main` into their own repo    
 - To start working on your next feature, create a new `branch` and repeat!
 
+For a version of this workflow with screenshots, take a look at this document:
 
+https://docs.google.com/document/d/1JWv1x3mL4fSrn7fhQVexnKKAh2YOM7JkHX-Dv1PnpNY/edit
 
