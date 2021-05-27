@@ -57,13 +57,32 @@ From the `main` branch, each team member will create a `feature` branch, which i
 
 In GitHub-speak, your `upstream` is the source of truth and the birthplace of your code. All team collaboration happens `upstream`. We're also going to set your `origin` as your `upstream` so that when you open a `pull request` your code will be incorporated into the team code.
 
-Here are the steps:
+Here are the steps, with details specific to this group project:
 
-- Team lead forks the repo from `cb-wd-7` and gives team members `write` access.
-- Team members `clone` from the forked repo.
-- Each team member (including the lead) creates a new `branch` from the forked repo.
-- Add, commit, and push your code in the same way that you always have.
+- Team lead forks the repo from `cb-wd-7` and opens *settings* from the nav bar at the top
+   - rename the branch to `main` (instead of `master`)
+   - rename the repo to be called `group-project-ecomm`
+   - in the *manage access* tab, add each group member and give them `write` access
+    and gives team members `write` access
+- Everyone (team lead *and* team members) `clone` to their desktop from the link on the team lead's repo and opens the new project in VSCode
+- Everyone (team lead *and* team members) uses VSCode to create a new `branch` from the forked repo
+   - click the *source control* icon on the left side of VSCode
+   - click the 3 dots to open the menu and choose the *branch/create branch* option
+   - give your branch a name that starts with your initials - for example, `jdg-branch`
+   - look in the lower left corner of VSCode to make sure it shows your branch name - this confirms that you are on your new branch!
+   - if you need to change to a new branch, type `git checkout <branchName>` in the terminal - I would type `git checkout jdg-branch` to switch to my branch
+- Add, commit, and push your code in the same way that you always have, making sure you're *on your branch* when you are making changes
+- The first time you `push`, you will probably get a message letting you know that your current branch has no upstream branch
+   - if you pushed your code using the VSCode tool, you will get a modal with this message - click `ok`. You will see a dropdown asking you to set the `upstream`, and it is *VERY IMPORTANT* that you choose the `origin` as your `upstream`.
+   - if you pushed your code using the terminal, you will get a message that says, `fatal: The current branch <branchname> has no upstream branch. To push the current branch and set the remote as upstream, use git push --set-upstream origin <branchname>`. Do this! 
 - Open a `pull request` when your branch is ready to be merged (when your feature is complete).
+  - if you pushed and set your origin using the VSCode tool, you'll be automatically asked if you want to create a `pull request`. If your feature is complete and you're ready, then go ahead!
+- VSCode will show you a confirmation of where your changes are coming *from* and where they are going *to* - *PAY CLOSE ATTENTION HERE!*
+  - your changes should be coming *from* your branch
+  - your changes should be going *to* the `main` branch
+- When you submit your PR, *message the group chat* 
+  - this lets your team lead know that your code needs to be merged - *NEVER* merge your own PR!
+  - team lead: reply to the message to let your team know that they need to pull the updated code from `main` into their own repo    
 - To start working on your next feature, create a new `branch` and repeat!
 
 
